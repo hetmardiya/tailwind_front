@@ -1,0 +1,22 @@
+{
+  "name": "tailwind_front",
+  "version": "1.0.0",
+  "description": "just creating a front of website with tailwind",
+  "main": "app.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./website/style.css",
+    "start": "node app.js",
+    "dev": "concurrently \"npx tailwindcss -i ./src/input.css -o ./website/style.css --watch\" \"nodemon app.js\""
+  },
+  "author": "Het Mardiya",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "tailwindcss": "^3.4.10"
+  }
+}
