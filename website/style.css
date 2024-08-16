@@ -601,6 +601,10 @@ video {
   display: flex;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
