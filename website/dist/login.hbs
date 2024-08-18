@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    {{> style}}
+</head>
+<body class="bg-slate-800">
+    {{> navbar}}
+    <!-- login section -->
+      <div class="w-full">
+        <div class="absolute w-full h-[90vh] flex justify-center items-center">
+            <div class="backdrop-blur-[2px] p-10 flex flex-col justify-center items-center border-white border-2">
+                <p class="text-white font-extrabold text-3xl mb-8">Login</p>
+                <form action="" class="flex flex-col gap-4">
+                    <input class="h-10 rounded-lg text-center uppercase outline-none focus:bg-gray-300" type="text" placeholder="username">
+                    <input class="h-10 rounded-lg text-center uppercase outline-none focus:bg-gray-300" type="password" placeholder="password">
+                    <label class="text-slate-400 font-medium" for="forgot"><input type="checkbox" name="forgot" id="forgot" class="mr-2">Forgot Password</label>
+                    <button class="w-full py-2 px-4 bg-blue-800 hover:bg-blue-900 rounded-xl " type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <img class="w-full h-[90vh]" src="https://img.freepik.com/premium-vector/abstract-circle-square-triangle-plus-light-out-technology-with-neon-hitech-communication-concept-innovation-background-vector-design_116849-81.jpg?w=1060" alt="">
+    </div>
+    {{> footer}}
+</body>
+</html>

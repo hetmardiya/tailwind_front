@@ -6,12 +6,55 @@
   <link rel="stylesheet" href="/style.css">
   <title>{{title}}</title>
 </head>
-<body>
+<body class="bg-slate-800">
   {{> navbar}}
-  <div class="container mx-auto p-4">
-    <h1 class="text-4xl font-bold text-blue-500">About Us</h1>
-    <p>This is the about page content styled with Tailwind CSS.</p>
-  </div>
+  <!-- image section -->
+     <div class="w-full">
+        <img class="w-full h-[77vh]" src="https://img.freepik.com/premium-photo/company-profile-mockup-image_1252102-38141.jpg?w=740" alt="">
+    </div>
+    <!-- left pic right text -->
+     <div class="w-full flex md:flex-row justify-center items-center flex-col my-20">
+        <div class="w-fit flex mx-16">
+            <img class="md:min-w-[745px] md:min-h-[500px]" src="https://img.freepik.com/free-photo/young-graphic-designer-working-office_158595-1137.jpg?t=st=1723980357~exp=1723983957~hmac=1f28e4602d82c6566a3559a85c02eb6349161212ee3af74d4ff165c7ab65ee9a&w=996" alt="">
+        </div>
+        <div class="max-w-[80%] md:max-w-[40%] md:text-left flex justify-center items-center flex-col mt-8 mr-8">
+            <p class="text-white font-bold text-4xl">we always make the best</p>
+            <div class="w-28 h-1 border-b-4 border-b-yellow-400 mt-2 rounded-lg"></div>
+            <p class="font-normal text-slate-400 text-center mt-4">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sequi. Fugiat, doloribus ea expedita perferendis saepe qui consequatur non quos aut magni, eum autem officiis libero. Ut rem eaque nihil excepturi? Aperiam nemo facilis suscipit voluptate iste nihil est, vitae recusandae tempore voluptas ut eligendi repudiandae esse molestias aspernatur quidem? sit amet consectetur adipisicing elit. Ut harum sed sequi iusto quaerat. Esse inventore vero ab iste rem?</p>
+        </div>
+     </div>
+     <!-- numbers -->
+      <div class="w-full flex flex-col justify-center items-center mb-8">
+        <p class="text-white font-bold text-4xl">Our skills</p>
+        <div class="w-28 h-1 border-b-4 border-b-yellow-400 mt-2 rounded-lg"></div>
+      </div>
+      <div class="w-full  flex flex-col md:flex-row md:justify-evenly justify-center items-center">
+        <div class="flex flex-col lg:w-full lg:flex-row lg:justify-around">
+            <div class="flex flex-col justify-center items-center mb-6 md:mb-12">
+                <p class="text-white font-bold text-4xl">20+</p>
+                <p class="font-medium text-slate-400">yers of experience</p>
+            </div>
+            <div class="flex flex-col justify-center items-center mb-6 md:mb-12">
+                <p class="text-white font-bold text-4xl">1000+</p>
+                <p class="font-medium text-slate-400">project done</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:w-full lg:flex-row lg:justify-around">
+            <div class="flex flex-col justify-center items-center mb-6 md:mb-12">
+                <p class="text-white font-bold text-4xl">300+</p>
+                <p class="font-medium text-slate-400">satisfied client</p>
+            </div>
+            <div class="flex flex-col justify-center items-center mb-6 md:mb-12">
+                <p class="text-white font-bold text-4xl">64+</p>
+                <p class="font-medium text-slate-400">certificate award</p>
+            </div>
+        </div>
+      </div>
+      <!-- text under pic  -->
+       <div class="w-full">
+           <p class=" w-full h-[100vh] capitalize absolute text-white font-extrabold text-4xl flex justify-center items-center text-center">road to the victory with us</p> 
+            <img class="w-full h-[100vh]" src="https://img.freepik.com/free-photo/dark-fantasy-scene_23-2151136090.jpg?t=st=1723984245~exp=1723987845~hmac=5303c4b3cbcc6b2c6af3c7ec60d70cb679892ec5f209236edf1a04cb6b190e7a&w=996" alt="">
+       </div>
   {{> footer}}
 </body>
 </html>
